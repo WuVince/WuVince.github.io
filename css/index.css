@@ -742,6 +742,11 @@ footer {
     color: #49b1f5;
   }
 }
+.video-container iframe {
+  width: 900px;
+  height: 506.25px;
+  text-align: center;
+}
 .recent-post-item {
   margin: 1.6rem 0 2rem;
 }
@@ -1070,7 +1075,26 @@ footer {
   -ms-transform: translate3d(0, 4.5rem, 0);
   transform: translate3d(0, 4.5rem, 0);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
+  .video-container iframe {
+    width: 300px;
+    height: 168.75px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1300px) and (min-width: 768px) {
+  .video-container iframe {
+    width: 700px;
+    height: 393.75px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  .video-container iframe {
+    width: 600px;
+    height: 337.5px;
+    text-align: center;
+  }
   .recent-post-item .article-title {
     font-size: 1rem;
   }
