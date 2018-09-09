@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vincewu.net/2018/09/09/Leetcode/Leetcode-1-to-10/</loc>
+    
+    <lastmod>2018-09-09T22:31:59.221Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://vincewu.net/2018/09/09/Java/Java-FAQ/</loc>
+    
+    <lastmod>2018-09-09T21:15:09.490Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://vincewu.net/2018/08/18/Editor/Atom/</loc>
+    
+    <lastmod>2018-09-09T21:09:22.056Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://vincewu.net/2018/09/09/CLI/Homebrew/Homebrew-instruction/</loc>
+    
+    <lastmod>2018-09-09T21:08:58.637Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://vincewu.net/2018/09/09/Java/How-to-install-Java-8-with-homebrew/</loc>
+    
+    <lastmod>2018-09-09T19:28:59.044Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://vincewu.net/2018/08/23/Angular/Angular-4-Edit-Application/</loc>
     
     <lastmod>2018-09-09T18:35:42.847Z</lastmod>
@@ -47,13 +82,6 @@
     <loc>https://vincewu.net/2018/08/18/Java/Lombok-Annotation/</loc>
     
     <lastmod>2018-08-24T02:18:24.234Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://vincewu.net/2018/08/18/Editor/Atom/</loc>
-    
-    <lastmod>2018-08-24T02:04:16.542Z</lastmod>
     
   </url>
   

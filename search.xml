@@ -3,6 +3,84 @@
   
     
     <entry>
+      <title>Leetcode 1-10</title>
+      <link href="/2018/09/09/Leetcode/Leetcode-1-to-10/"/>
+      <url>/2018/09/09/Leetcode/Leetcode-1-to-10/</url>
+      <content type="html"><![CDATA[<h2 id="1-Two-Sum"><a href="#1-Two-Sum" class="headerlink" title="1. Two Sum"></a>1. Two Sum</h2><p>🍏🍏🍏</p><p>Given an array of integers, return <strong>indices</strong> of the two numbers such that they add up to a specific target.</p><p>You may assume that each input would have <strong>exactly</strong> one solution, and you may not use the same element twice.</p><p><strong>Example</strong>:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Given nums = [2, 7, 11, 15], target = 9,</span><br><span class="line"></span><br><span class="line">Because nums[0] + nums[1] = 2 + 7 = 9,</span><br><span class="line">return [0, 1].</span><br></pre></td></tr></table></figure><p>Solution 1:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        <span class="keyword">int</span>[] resultArray = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (nums[i] + nums[j] == target) &#123;</span><br><span class="line">                    resultArray[<span class="number">0</span>] = i;</span><br><span class="line">                    resultArray[<span class="number">1</span>] = j;</span><br><span class="line">                    <span class="keyword">return</span> resultArray;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> resultArray;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>Performance: 27ms</p><p>Solution 2:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        <span class="keyword">if</span> (nums == <span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span>[] result = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>];</span><br><span class="line">        HashMap&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;Integer, Integer&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (map.containsKey(target - nums[i]))&#123;</span><br><span class="line">                result[<span class="number">0</span>] = map.get(target - nums[i]);</span><br><span class="line">                result[<span class="number">1</span>] = i;</span><br><span class="line">                <span class="keyword">return</span> result;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                map.put(nums[i], i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>Performance: 9ms</p>]]></content>
+      
+      <categories>
+          
+          <category> Leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Algorithms </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Homebrew Instruction</title>
+      <link href="/2018/09/09/CLI/Homebrew/Homebrew-instruction/"/>
+      <url>/2018/09/09/CLI/Homebrew/Homebrew-instruction/</url>
+      <content type="html"><![CDATA[<h2 id="Homebrew-Cask"><a href="#Homebrew-Cask" class="headerlink" title="Homebrew Cask"></a>Homebrew Cask</h2><blockquote><p>Reference from <a href="https://github.com/Homebrew/homebrew-cask" target="_blank" rel="noopener">Homebrew Cask Repository</a></p></blockquote><p>Homebrew Cask extends <a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a> and brings its elegance, simplicity, and speed to the installation and management of GUI macOS applications such as Atom and Google Chrome.</p><p>Install Java8 shows as below(results may various based on your env property):<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">~ brew cask install java8</span><br><span class="line">Updating Homebrew...</span><br><span class="line">==&gt; Auto-updated Homebrew!</span><br><span class="line">Updated 1 tap (homebrew/core).</span><br><span class="line">==&gt; New Formulae</span><br><span class="line">ucloud</span><br><span class="line"></span><br><span class="line">==&gt; Caveats</span><br><span class="line">This Cask makes minor modifications to the JRE to prevent issues with</span><br><span class="line">packaged applications, as discussed here:</span><br><span class="line"></span><br><span class="line">  https://bugs.eclipse.org/bugs/show_bug.cgi?id=411361</span><br><span class="line"></span><br><span class="line">If your Java application still asks <span class="keyword">for</span> JRE installation, you might need</span><br><span class="line">to reboot or <span class="built_in">logout</span>/login.</span><br><span class="line"></span><br><span class="line">Installing java8 means you have AGREED to the license at</span><br><span class="line">  https://www.oracle.com/technetwork/java/javase/terms/license/index.html</span><br><span class="line"></span><br><span class="line">==&gt; Satisfying dependencies</span><br><span class="line">==&gt; Downloading http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-macosx-x64.dmg</span><br><span class="line">==&gt; Downloading from http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-macosx-x64.dmg?AuthParam=1536521262_1d36fcda798e0621f68c643d30d3f258</span><br><span class="line"><span class="comment">######################################################################## 100.0%</span></span><br><span class="line">==&gt; Verifying checksum <span class="keyword">for</span> Cask java8</span><br><span class="line">==&gt; Installing Cask java8</span><br><span class="line">==&gt; Creating Caskroom at /usr/<span class="built_in">local</span>/Caskroom</span><br><span class="line">==&gt; We<span class="string">'ll set permissions properly so we won'</span>t need sudo <span class="keyword">in</span> the future.</span><br><span class="line">Password:</span><br><span class="line">==&gt; Running installer <span class="keyword">for</span> java8; your password may be necessary.</span><br><span class="line">==&gt; Package installers may write to any location; options such as --appdir are ignored.</span><br><span class="line">installer: Package name is JDK 8 Update 181</span><br><span class="line">installer: Installing at base path /</span><br><span class="line">installer: The install was successful.</span><br><span class="line">🍺  java8 was successfully installed!</span><br></pre></td></tr></table></figure></p>]]></content>
+      
+      <categories>
+          
+          <category> CLI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Homebrew </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>How to install Java 8 with Home Brew</title>
+      <link href="/2018/09/09/Java/How-to-install-Java-8-with-homebrew/"/>
+      <url>/2018/09/09/Java/How-to-install-Java-8-with-homebrew/</url>
+      <content type="html"><![CDATA[<blockquote><p>Reference from <a href="https://stackoverflow.com/questions/24342886/how-to-install-java-8-on-mac" target="_blank" rel="noopener">How to install Java 8 with homwbrew</a></p></blockquote><p><strong>Don’t rely on</strong> Oracle to install Java properly on your Mac.</p><p>Use <code>Homebrew</code>. this will install the latest jdk:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install java</span><br></pre></td></tr></table></figure><p>If you want to manage multiple versions of Java on your Mac, consider using <code>jenv</code>.</p><p>UPDATE: Now that Java 8 is no longer the most current version, if you want java 8 install it this way:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew tap caskroom/versions</span><br><span class="line">brew cask install java8</span><br></pre></td></tr></table></figure><p>To get a list of all older versions of java:  <code>brew tap caskroom/versions</code> and then <code>brew cask search java</code></p><p>We use brew cask since we’d otherwise use the Oracle GUI installer that will likely not install Java properly on your Mac. (Use brew cask install APP to install GUI apps; use brew install APP.) Java is not a GUI app; It should not require “cask” but at least Oracle is consistent.</p>]]></content>
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java 8 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Java FAQ</title>
+      <link href="/2018/09/09/Java/Java-FAQ/"/>
+      <url>/2018/09/09/Java/Java-FAQ/</url>
+      <content type="html"><![CDATA[<h2 id="Why-would-the-‘final’-keyword-ever-be-useful"><a href="#Why-would-the-‘final’-keyword-ever-be-useful" class="headerlink" title="Why would the ‘final’ keyword ever be useful?"></a>Why would the ‘final’ keyword ever be useful?</h2><p><code>final</code> <strong>expresses intent</strong>. It tells the user of a class, method or variable “This element is not supposed to change, and if you want to change it, you haven’t understood the existing design.”</p><p>This is important because program architecture would be really, really hard if you had to anticipate that every class and every method you ever write might be changed to do something completely different by a subclass. It is much better to decide up-front which elements are supposed to be changeable and which aren’t, and to enforce the unchangeablility via final.</p><p>You could also do this via comments and architecture documents, but it is always better to let the compiler enforce things that it can than to hope that future users will read and obey the documentation.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Final variables --&gt; To create constant variables</span><br><span class="line">Final Methods --&gt; Prevent Method Overriding</span><br><span class="line">Final Classes --&gt; Prevent Inheritance</span><br></pre></td></tr></table></figure>]]></content>
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>Edit Application</title>
       <link href="/2018/08/23/Angular/Angular-4-Edit-Application/"/>
       <url>/2018/08/23/Angular/Angular-4-Edit-Application/</url>
@@ -136,7 +214,7 @@
       
       <categories>
           
-          <category> Text Editor </category>
+          <category> Editor </category>
           
       </categories>
       
