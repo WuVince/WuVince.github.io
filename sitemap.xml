@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vincewu.net/2018/09/09/Java/Most-Important-JVM-Parameters/</loc>
+    
+    <lastmod>2018-12-17T05:31:49.493Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://vincewu.net/2018/12/15/OOD/Google/Scheduling-Job-Involving-RAM-and-CPU/</loc>
+    
+    <lastmod>2018-12-17T05:21:17.096Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://vincewu.net/2018/09/25/OOD/how_to_scale_dropbox/</loc>
+    
+    <lastmod>2018-12-08T06:00:45.477Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://vincewu.net/2018/11/11/Java/JVM-Architecture/</loc>
     
     <lastmod>2018-11-12T04:12:36.182Z</lastmod>
